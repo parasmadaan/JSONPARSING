@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+android:background="#00CDCD"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.paras.zailetassignment.MainActivity"
+    android:weightSum="1"
+    android:elevation="2dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingTop="15dp"
+            android:text="SELECT TOPICS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="italic"
+android:fontFamily="serif"
+            android:id="@+id/tv1"
+            android:textAlignment="center"
+            android:focusableInTouchMode="true"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true" />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/tv1"
+    android:layout_height="600dp"
+    android:id="@+id/r2">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            tools:listitem="@layout/topic"
+            android:id="@+id/recyclerview"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp">
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:text="PROCEED"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/button"
+            android:textColor="#ffffff"
+           android:textSize="20sp"
+            android:id="@+id/pro"
+            android:layout_below="@+id/recyclerview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp" />
+
+</RelativeLayout>
+
+</RelativeLayout>
